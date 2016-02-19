@@ -110,6 +110,7 @@ BASE LAYOUT STYLES
 
 
 
+
 /*-- Gallery --*/
 
 
@@ -305,6 +306,7 @@ MEDIA QUERIES
 		width: 50%;
 	}
 	
+	
 	.gallery {
 		max-width: 90%;
 		background: #000;
@@ -404,7 +406,6 @@ MEDIA QUERIES
 	  display: table;
 	  clear: both;
 }
-
 
 }
 
