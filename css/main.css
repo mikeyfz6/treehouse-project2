@@ -18,7 +18,7 @@ body {
 	margin:0;
 }
 p {
-	font-size: .95em;
+	font-size: 1.15em;
 	margin-bottom: 1.8em;
 	font-family: 'Belleza', sans-serif;;
 }
@@ -42,7 +42,7 @@ a {
 img {
 	max-width: 100%;
 }
-.clearfix {
+.clearfix:after {
 	content: " ";
   display: table;
   clear: both;
@@ -54,6 +54,7 @@ BASE LAYOUT STYLES
 ========================*/
 
 /*-----NAV-BAR --------*/
+
 
 .header {
 	width: 100%;
@@ -171,6 +172,7 @@ BASE LAYOUT STYLES
 }
 
 /*-- Footer --*/
+
 .footer {
 	margin: 0;
 }
@@ -267,10 +269,12 @@ MEDIA QUERIES
 ========================*/
 
 
-@media screen and ( min-width:768px ) {
+@media screen and ( min-width: 768px ) {
 
 
 	/*-- Nav-bar 768px --*/
+
+	
 
 	.name {
 		font-size: 2em;
@@ -338,7 +342,7 @@ MEDIA QUERIES
 		display: none;
 	}
 
-	.clearfix {
+	.clearfix::after {
 	content: " ";
   display: table;
   clear: both;
@@ -353,7 +357,7 @@ MEDIA QUERIES
 		z-index: 10;
 	}
 	.sub-header {
-		margin-top: 50px;
+		margin-top: 100px;
 	}
 
 
@@ -373,7 +377,7 @@ MEDIA QUERIES
 		float: right;
 	
 }
-	
+
 	.main-nav li {
 		display: inline-block;
 
@@ -398,12 +402,10 @@ MEDIA QUERIES
 	.gallery li:nth-child(2n+1) {
 		clear: none;
 	}
+	.gallery li:nth-child(4) {
+		clear: left;
+	}
 
-	.clearfix {
-		content: " ";
-	  display: table;
-	  clear: both;
-}
 
 }
 
